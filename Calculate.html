@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0125)https://bb.rocmn.nl/bbcswebdav/pid-2089969-dt-content-rid-10929330_2/courses/ICTICU16_Programmeertechnieken/js-calculate.html -->
+<html lang="nl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Calculate</title>
+    
+    <!-- Better to use external stylesheet. -->
+    <style>
+        body {
+            font-family: Tahoma, Geneva, sans-serif;
+        }
+        
+        label {
+            display: inline-block;
+            width: 120px;
+        }
+        
+        .result {
+            padding: 1em;
+            background-color: #333;
+            color: #ccc;
+        }
+        
+        #result {
+            font-size: 120%;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculate</h1>           
+
+    <form>
+        <p>
+          <label for="numbers">Numbers:</label>
+          <input type="text" id="numbers" name="numbers">
+        </p>
+        <p>
+          <label for="operation">Operation:</label>
+          <select id="operation">
+            <option value="sum">+</option>
+            <option value="substract">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+          </select>
+        </p>
+        <button type="button" id="calculate">Calculate</button>
+        <p class="result">Result: <strong id="result">-</strong></p>
+    </form>
+
+    <h2>Test Examples</h2>           
+    <pre>    Numbers:    30, 2, 5
+    Operation:  +
+    Result:     37        ( = 30 + 2 + 5 )
+    
+    Numbers:    30, 2, 5
+    Operation:  -
+    Result:     23        ( = 30 - 2 - 5 )
+    
+    Numbers:    30, 2, 5
+    Operation:  *
+    Result:     300       ( = 30 * 2 * 5 )
+    
+    Numbers:    30, 2, 5
+    Operation:  /
+    Result:     3         ( = 30 / 2 / 5 )
+    </pre>
+      
+    <!-- JavaScript - better to put code in external JS file -->    
+    <script>
+
+        
+        // Write your JS code here
+
+        
+    </script>  
+
+</body></html>
