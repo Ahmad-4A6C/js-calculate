@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="nl">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-		<title>Calculate</title>
-		<link rel="stylesheet" href="css_calculate.css">
-	</head>
-	<body>
-    	<h1>Calculate</h1>           
+<head>
+    <meta charset="utf-8">
+    <title>Calculate</title>
 
-		<form>
-			<p>
-			  <label for="numbers">Numbers:</label>
-			  <input type="text" id="numbers" name="numbers">
-			</p>
-			<p>
-			  <label for="operation">Operation:</label>
-			  <select id="operation">
-			  	<option value="sum">+</option>
-				<option value="substract">-</option>
-				<option value="multiply">*</option>
-				<option value="divide">/</option>
-			  </select>
-			</p>
-			<button type="button" id="calculate">Calculate</button>
-			<p class="result">Result: <strong id="result">-</strong></p>
-		</form>
+    <!-- Better to use external stylesheet. -->
+    <link rel="stylesheet" href="css_calculate.css">
+</head>
+<body>
+    <h1>Calculate</h1>
 
-		<h2>Test Examples</h2>           
-		<pre>    Numbers:    30, 2, 5
-		Operation:  +
-		Result:     37        ( = 30 + 2 + 5 )
+    <form>
+        <p>
+          <label for="numbers">Numbers:</label>
+          <input type="text" id="numbers" name="numbers">
+        </p>
+        <p>
+          <label for="operation">Operation:</label>
+          <select id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+          </select>
+        </p>
+        <button type="button" id="calculate">Calculate</button>
+        <p class="result">Result: <strong id="result">-</strong></p>
+    </form>
 
-		Numbers:    30, 2, 5
-		Operation:  -
-		Result:     23        ( = 30 - 2 - 5 )
+    <h2>Test Examples</h2>
+    <pre>
+    Numbers:    30, 2, 5
+    Operation:  +
+    Result:     37        ( = 30 + 2 + 5 )
 
-		Numbers:    30, 2, 5
-		Operation:  *
-		Result:     300       ( = 30 * 2 * 5 )
+    Numbers:    30, 2, 5
+    Operation:  -
+    Result:     23        ( = 30 - 2 - 5 )
 
-		Numbers:    30, 2, 5
-		Operation:  /
-		Result:     3         ( = 30 / 2 / 5 )
-		</pre>
-	
-		<script src="js_calculate.js"></script>
-	</body>
+    Numbers:    30, 2, 5
+    Operation:  *
+    Result:     300       ( = 30 * 2 * 5 )
+
+    Numbers:    30, 2, 5
+    Operation:  /
+    Result:     3         ( = 30 / 2 / 5 )
+    </pre>
+
+    <!-- JavaScript - better to put code in external JS file -->
+    <script src="js_calculate.js">
+    </script>
+</body>
 </html>

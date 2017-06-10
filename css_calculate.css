@@ -1,19 +1,50 @@
 body {
-	font-family: Tahoma, Geneva, sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;
+	background-color: lightgray
 }
 
 label {
-	display: inline-block;
-	width: 120px;
+    display: inline-block;
+    width: 120px;
+	border: solid 1px;
+	padding: 0.5em;
+	border-radius: 1em 1em 1em 1em
 }
 
 .result {
-	padding: 1em;
-	background-color: #333;
-	color: #ccc;
+    padding: 2em;
+    background-color: #000000;
+    color: #ccc;
 }
 
 #result {
-	font-size: 120%;
-	color: #fff;
+    font-size: 120%;
+    color: #fff;
+}
+
+button{
+	padding: 1em;
+	cursor: pointer;
+	background-color: #333;
+	color: white;
+	transition: 0.5s;
+}
+
+button:hover{
+	background-color: red;
+	color: white;
+	padding-right: 3em;
+	
+}
+
+input , select{
+	padding: 0.65em;
+	position: absolute;
+	margin-left: 0.5em;
+	background-color: #333;
+	color: white;
+}
+
+select{
+	cursor: pointer;
 }
