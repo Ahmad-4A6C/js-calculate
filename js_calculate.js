@@ -20,7 +20,10 @@ function calculate() {
         if (operator == '+') {
             res = firstNumber + secondNumber;
 
-        } 
+        } else if (operator == '-') {
+            res = firstNumber - secondNumber;
+
+        }
         return res;
     }
     document.getElementById('result').innerHTML = res;
