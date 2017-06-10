@@ -23,6 +23,9 @@ function calculate() {
         } else if (operator == '-') {
             res = firstNumber - secondNumber;
 
+        } else if (operator == '*') {
+            res = firstNumber * secondNumber;
+
         }
         return res;
     }
